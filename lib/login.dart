@@ -64,19 +64,25 @@ class LoginPage extends StatelessWidget {
 
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
-                  child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+                  child:
+                      Row(mainAxisAlignment: MainAxisAlignment.end, children: [
                     TextButton(
                         onPressed: () {},
                         child: const Text(
                           'Forgot Password?',
-                          style: TextStyle(color: Colors.blueAccent),
+                          style: TextStyle(
+                              color: Colors.blueAccent,
+                              fontWeight: FontWeight.bold),
                         ))
                   ]),
                 ),
 
                 //SignIn Button
 
-                MyButton(name: 'Sign in',onTap: (){},),
+                MyButton(
+                  name: 'Sign in',
+                  onTap: () {},
+                ),
                 const SizedBox(
                   height: 25,
                 ),
@@ -116,7 +122,12 @@ class LoginPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text('Not a member?'),
-                    TextButton(onPressed: () {}, child: const Text('Sign Up'))
+                    TextButton(
+                        onPressed: () {},
+                        child: const Text(
+                          'Sign Up',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ))
                   ],
                 )
               ],
