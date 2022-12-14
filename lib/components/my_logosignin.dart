@@ -14,6 +14,7 @@ class LogoSignIn extends StatelessWidget {
         width: 90,
         height: 85,
         decoration: BoxDecoration(
+          border: Border.all(color: Colors.white),
             color: Colors.grey[400], borderRadius: BorderRadius.circular(10)),
         child: Padding(
           padding: EdgeInsets.all(padding),
